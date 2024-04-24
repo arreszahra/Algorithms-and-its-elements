@@ -1,0 +1,26 @@
+ ALGORITHM check
+VAR
+    cpt:INTEGER:=0;
+    cpm:INTEGER:=1;
+    cpc:INTEGER:=0;
+    c:CHAR;
+    str:STRING;
+BEGIN
+   read(c);
+   REPEAT
+    
+    IF (c=arr["a","e","i","o","u","y"]) THEN
+         cpt:=cpt+1;
+    ELSE
+        cpc:=cpc+1;
+    END_IF
+    IF (c="") THEN
+        cpm:=cpm+1;
+    END_IF
+   UNTIL (c="." )
+   write(cpt);
+   write(cpc);
+   write(cpm);
+END
+
+
